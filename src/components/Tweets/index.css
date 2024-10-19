@@ -1,0 +1,125 @@
+/* General Styling for the entire page */
+body {
+    background-color: #e6ecf0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the homepage */
+.home-container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.home-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1DA1F2;
+    margin-bottom: 10px;
+}
+
+.welcome-message {
+    font-size: 18px;
+    color: #657786;
+}
+
+/* Container for the tweets */
+.tweets-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Individual tweet card styling (like a Twitter tweet) */
+.tweet-card {
+    background-color: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.2s ease;
+}
+
+.tweet-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tweet header (username and user handle) */
+.tweet-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tweet-username {
+    font-weight: bold;
+    font-size: 16px;
+    color: #14171A;
+    margin-right: 5px;
+}
+
+.tweet-handle {
+    font-size: 14px;
+    color: #657786;
+}
+
+/* Tweet content text */
+.tweet-content {
+    font-size: 15px;
+    color: #14171A;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Tweet footer with stats (likes and retweets) */
+.tweet-footer {
+    display: flex;
+    justify-content: space-between;
+    color: #657786;
+    font-size: 13px;
+}
+
+.tweet-stats {
+    display: flex;
+    gap: 20px;
+}
+
+.tweet-likes, .tweet-retweets {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.tweet-likes:hover, .tweet-retweets:hover {
+    color: #1DA1F2;
+}
+
+/* Icons for likes and retweets (using emojis for simplicity here) */
+.tweet-likes::before {
+    content: "❤";
+}
+
+.tweet-retweets::before {
+    content: "🔁";
+}
+
+/* Date and time for the tweet */
+.tweet-date {
+    color: #657786;
+}
+
+/* No tweets available message */
+.no-tweets {
+    text-align: center;
+    color: #999;
+    font-size: 16px;
+}
